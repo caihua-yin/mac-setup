@@ -1,0 +1,21 @@
+#### Install pathogen.vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+#### Install vim plugins
+git clone https://github.com/tpope/vim-sensible.git vim-sensible
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
+
+#### vim ~/.vimrc
+set nu
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+
+#### Reference
+http://blog.csdn.net/troylemon/article/details/43482029
