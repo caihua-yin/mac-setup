@@ -16,6 +16,8 @@ filetype plugin indent on
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+#### Depends on ctag, see https://thomashunter.name/blog/installing-vim-tagbar-with-macvim-in-os-x/ for the installation
+map <C-m> :TagbarToggle<CR>
 
 #### Reference
 http://blog.csdn.net/troylemon/article/details/43482029
