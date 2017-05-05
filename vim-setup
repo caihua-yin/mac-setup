@@ -6,9 +6,13 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/tpope/vim-sensible.git vim-sensible
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/majutsushi/tagbar ~/.vim/bundle/tagbar
+git clone https://github.com/magic-dot-files/TagHighlight
+git clone https://github.com/scrooloose/syntastic
+git clone https://github.com/Raimondi/delimitMate
 
 #### vim ~/.vimrc
 set nu
+set tabstop=4 shiftwidth=4 expandtab
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
